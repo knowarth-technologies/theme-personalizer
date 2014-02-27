@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder
+	package-path="com.knowarth.portlets.themepersonalizer">
+	<author>Samir Bhatt</author>
+	<namespace>KNOWARTH</namespace>
+    <entity name="AvailablePersonalizedTheme" local-service="true" remote-service="false">
+        <column name="id" type="long" primary="true"></column>
+        <column name="companyId" type="long"></column>
+        <column name="themeId" type="String"></column>
+        <finder name="CompanyId" return-type="Collection">
+            <finder-column name="companyId"></finder-column>
+        </finder>
+        <finder name="CompanyIdAndThemeId" return-type="Collection">
+            <finder-column name="companyId"></finder-column>
+            <finder-column name="themeId"></finder-column>
+        </finder>
+    </entity>
+    <entity name="UserPersonalizedTheme" local-service="true" remote-service="false">
+        <column name="id" type="long" primary="true"></column>
+        <column name="userId" type="long"></column>
+        <column name="layoutId" type="long"></column>
+        <column name="themeId" type="String"></column>
+        <column name="colorSchemeId" type="String"></column>
+        <column name="applyForAllPages" type="boolean"></column>
+        <finder name="UserIdAndApplyForAllPages" return-type="Collection">
+            <finder-column name="userId"></finder-column>
+            <finder-column name="applyForAllPages"></finder-column>
+        </finder>
+        <finder name="UserIdAndLayoutId" unique="false" return-type="Collection">
+            <finder-column name="userId"></finder-column>
+            <finder-column name="layoutId"></finder-column>
+        </finder>
+        <finder name="UserId" return-type="Collection">
+            <finder-column name="userId"></finder-column>
+        </finder>
+        <finder name="ThemeId" return-type="Collection">
+            <finder-column name="themeId"></finder-column>
+        </finder>
+    </entity>
+</service-builder>

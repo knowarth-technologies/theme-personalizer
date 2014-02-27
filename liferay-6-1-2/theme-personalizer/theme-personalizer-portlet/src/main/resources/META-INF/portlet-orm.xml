@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.knowarth.portlets.themepersonalizer.model.impl.AvailablePersonalizedThemeModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID_" />
+			</id>
+			<basic name="companyId" />
+			<basic name="themeId" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.knowarth.portlets.themepersonalizer.model.impl.UserPersonalizedThemeModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID_" />
+			</id>
+			<basic name="userId" />
+			<basic name="layoutId" />
+			<basic name="themeId" />
+			<basic name="colorSchemeId" />
+			<basic name="applyForAllPages" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.knowarth.portlets.themepersonalizer.model.impl.AvailablePersonalizedThemeImpl" name="AvailablePersonalizedTheme">
+		<table name="KNOWARTH_AvailablePersonalizedTheme" />
+		<attributes />
+	</entity>
+	<entity class="com.knowarth.portlets.themepersonalizer.model.impl.UserPersonalizedThemeImpl" name="UserPersonalizedTheme">
+		<table name="KNOWARTH_UserPersonalizedTheme" />
+		<attributes />
+	</entity>
+</entity-mappings>

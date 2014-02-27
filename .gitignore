@@ -4,3 +4,10 @@
 *.jar
 *.war
 *.ear
+*.project
+liferay-6-1-2/theme-personalizer/.settings/
+*.classpath
+liferay-6-1-2/theme-personalizer/theme-personalizer-portlet-service/.settings/
+liferay-6-1-2/theme-personalizer/theme-personalizer-portlet/.settings/
+liferay-6-1-2/theme-personalizer/theme-personalizer-portlet/target/
+liferay-6-1-2/theme-personalizer/theme-personalizer-portlet-service/target/

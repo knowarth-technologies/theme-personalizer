@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.knowarth.portlets.themepersonalizer.model.AvailablePersonalizedTheme" />
+	<import class="com.knowarth.portlets.themepersonalizer.model.UserPersonalizedTheme" />
+	<class name="com.knowarth.portlets.themepersonalizer.model.impl.AvailablePersonalizedThemeImpl" table="KNOWARTH_AvailablePersonalizedTheme">
+		<cache usage="read-write" />
+		<id name="id" column="id_" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="themeId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.knowarth.portlets.themepersonalizer.model.impl.UserPersonalizedThemeImpl" table="KNOWARTH_UserPersonalizedTheme">
+		<cache usage="read-write" />
+		<id name="id" column="id_" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="layoutId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="themeId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="colorSchemeId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="applyForAllPages" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>
