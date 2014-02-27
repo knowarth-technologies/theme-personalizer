@@ -9,10 +9,10 @@ How to Use Theme Personalizer (Liferay 6.1.x CE)
 1. Install Theme Personalizer war file on Liferay Portal.
 2. Sign In as Portal admin and navigate to Control Panel.
 3. Now click on Theme Personalizer Admin entry from Portal section. It will display theme personalizer admin portlet as shown in bellow screenshot.
-(https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-1-2/theme-personalizer-admin-portlet-02.png)
+![ScreenShot](https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-1-2/theme-personalizer-admin-portlet-02.png)
 4. All themes that are deployed on Liferay portal will be displayed (except WAP themes). By using arrow butons move your chice of themes in Available thems list box. End user will be allowed to personalize only those themes that are slected in available themes list box. Once selection is done click on save button.
 5. Now navigate to any portal page and add Theme Personalizer portlet on the page. (It will be available under KNOWARTH Technologies category in add application diaglog box). Once added it will look similar to following screenshot.
-(https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-1-2/theme-personalizer-portlet.png)
+![ScreenShot](https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-1-2/theme-personalizer-portlet.png)
 6. Now Sign In as end user and select your chice of theme and color scheme and press save button. It will apply the theme on the page immediately. Other users will still see the default theme configured using mange page option. At any time we can reset the page theme to default by using Reset to Defaults option. If you check Apply for All pages check box then theme changes will be applied on all pages.
 
 Things to Remember
