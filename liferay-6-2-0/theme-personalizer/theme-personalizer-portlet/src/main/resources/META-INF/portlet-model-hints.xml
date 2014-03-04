@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.knowarth.portlets.themepersonalizer.model.AvailablePersonalizedTheme">
+		<field name="id" type="long" />
+		<field name="companyId" type="long" />
+		<field name="themeId" type="String" />
+	</model>
+	<model name="com.knowarth.portlets.themepersonalizer.model.UserPersonalizedTheme">
+		<field name="id" type="long" />
+		<field name="userId" type="long" />
+		<field name="layoutId" type="long" />
+		<field name="themeId" type="String" />
+		<field name="colorSchemeId" type="String" />
+		<field name="applyForAllPages" type="boolean" />
+	</model>
+</model-hints>

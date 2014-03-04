@@ -1,0 +1,24 @@
+.theme-personalizer-portlet{
+	.theme-personalizer{
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+.theme-personalizer-admin-portlet {
+	.available-themes {
+		margin-top: 1em;
+
+		.fieldset-legend {
+			font-size: 100%;
+		}
+
+		.legend {
+			border-bottom-width: 0;
+		}
+
+		legend {
+			padding: 0;
+			padding-bottom: 0.5em;
+		}
+	}
+}

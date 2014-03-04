@@ -129,7 +129,7 @@ public class ThemePersonalizerPortlet extends GenericPortlet {
 			if (themeObject.getColorSchemesMap().containsKey(
 					selectedColorSchemeId)) {
 				portletRequest.setAttribute(
-						PARAM_SELECTED_COLOR_SCHEME_ID,						
+						PARAM_SELECTED_COLOR_SCHEME_ID,
 								selectedColorSchemeId);
 			}
 			portletRequest.setAttribute(PARAM_APPLY_FOR_ALL_PAGES,

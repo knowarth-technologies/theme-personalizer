@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.2.0//EN" "http://www.liferay.com/dtd/liferay-display_6_2_0.dtd">
+
+<display>
+	<category name="Knowarth Technologies">	
+        <portlet id="theme-personalizer"></portlet>
+	</category>
+	<category name="category.hidden">
+		<portlet id="theme-personalizer-admin"></portlet>
+	</category>
+</display>
