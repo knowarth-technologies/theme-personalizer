@@ -15,6 +15,17 @@ How to Use Theme Personalizer (Liferay 6.1.x CE)
 ![ScreenShot](https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-1-2/theme-personalizer-portlet.png)
 6. Now Sign In as end user and select your chice of theme and color scheme and press save button. It will apply the theme on the page immediately. Other users will still see the default theme configured using mange page option. At any time we can reset the page theme to default by using Reset to Defaults option. If you check Apply for All pages check box then theme changes will be applied on all pages.
 
+How to Use Theme Personalizer (Liferay 6.2.x CE)
+---------
+1. Install Theme Personalizer war file on Liferay Portal.
+2. Sign In as Portal admin and navigate to Control Panel.
+3. Now click on Theme Personalizer Admin entry from Configuration section as shown in bellow screen
+![ScreenShot](https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-2-0/theme-persoanliser-admin-01.png)
+4. All themes that are deployed on Liferay portal will be displayed (except WAP themes) as shown in bellow screenshot. By using arrow butons move your chice of themes in Available thems list box. End user will be allowed to personalize only those themes that are slected in available themes list box. Once selection is done click on save button.
+![ScreenShot](https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-2-0/theme-persoanliser-admin-02.png)
+5. Now navigate to any portal page and add Theme Personalizer portlet on the page. (It will be available under KNOWARTH Technologies category). Once added it will look similar to following screenshot.
+![ScreenShot](https://raw.github.com/knowarth-technologies/theme-personalizer/master/screenshots/liferay-6-2-0/theme-persoanliser.png)
+
 Things to Remember
 ------
 - If there is no color scheme in a theme then Color Scheme dropdown will be blank. User can just choose Theme and apply it on the page.
@@ -30,7 +41,7 @@ Here are some of the key features of the plugin included in this version.
 - Control Panel based admin portlet to configure list of thmes available for theme personalization
 - Easy to use portlet for end user to choose their choice of theme and color scheme
 - Option to select personalized theme for all pages
-- This version is compitible with Liferay Portal 6.1.x CE.
+- This version is compitible with Liferay Portal 6.1.x CE & 6.2.X CE.
 
 Support
 ------
